@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+  <Appenders>
+    <Console name="Console" target="SYSTEM_OUT">
+      <!-- You can customize the colors/pattern here -->
+      <PatternLayout pattern="%d{HH:mm:ss} %-5level %logger{36} - %msg%n"/>
+      <PatternLayout pattern="%style{%d{HH:mm:ss}}{cyan} %highlight{%-5level} %style{%logger{36}}{yellow} - %msg%n"/>
+      
+    </Console>
+  </Appenders>
+
+  <Loggers>
+    <!-- Show only SQL queries -->
+    <Logger name="org.hibernate.SQL" level="info" additivity="false">
+      <AppenderRef ref="Console"/>
+    </Logger>
+
+    <!-- Hide JDBC connection pool chatter -->
+    <Logger name="org.hibernate.engine.jdbc.connections" level="error" additivity="false">
+      <AppenderRef ref="Console"/>
+    </Logger>
+
+    <!-- Hide transaction platform chatter -->
+    <Logger name="org.hibernate.engine.transaction" level="error" additivity="false">
+      <AppenderRef ref="Console"/>
+    </Logger>
+    <Logger name="org.hibernate.resource.transaction" level="error" additivity="false">
+      <AppenderRef ref="Console"/>
+    </Logger>
+
+    <!-- General Hibernate logs (WARN or above only) -->
+    <Logger name="org.hibernate" level="warn" additivity="false">
+      <AppenderRef ref="Console"/>
+    </Logger>
+
+    <!-- Default root logger -->
+    <Root level="error">
+      <AppenderRef ref="Console"/>
+    </Root>
+  </Loggers>
+</Configuration>
