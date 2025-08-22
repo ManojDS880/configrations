@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+  <session-factory>
+    <!-- Database Settings -->
+    <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+    <property name="hibernate.connection.url">jdbc:postgresql://localhost:5433/demo</property>
+    <property name="hibernate.connection.username">postgres</property>
+    <property name="hibernate.connection.password">root1</property>
+    <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+
+    <!-- Hibernate logging -->
+    <property name="hibernate.show_sql">true</property>
+    <property name="hibernate.format_sql">true</property>
+
+    <!-- Enable 2nd level cache -->
+    <property name="hibernate.cache.use_second_level_cache">true</property>
+    <property name="hibernate.cache.use_query_cache">true</property>
+    <property name="hibernate.cache.region.factory_class">org.hibernate.cache.ehcache.EhCacheRegionFactory</property>
+
+    <!-- Entity Mapping -->
+    <mapping class="caching.Bike"/>
+  </session-factory>
+</hibernate-configuration>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+  <session-factory>
+    <!-- Database Settings -->
+    <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+    <property name="hibernate.connection.url">jdbc:postgresql://localhost:5433/demo</property>
+    <property name="hibernate.connection.username">postgres</property>
+    <property name="hibernate.connection.password">root1</property>
+    <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+
+    <!-- Hibernate logging -->
+    <property name="hibernate.show_sql">true</property>
+    <property name="hibernate.format_sql">true</property>
+
+    <!-- Enable 2nd level cache -->
+    <property name="hibernate.cache.use_second_level_cache">true</property>
+    <property name="hibernate.cache.use_query_cache">true</property>
+    <property name="hibernate.cache.region.factory_class">org.hibernate.cache.ehcache.EhCacheRegionFactory</property>
+
+    <!-- Entity Mapping -->
+    <mapping class="caching.Bike"/>
+  </session-factory>
+</hibernate-configuration>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+  <session-factory>
+    <!-- Database Settings -->
+    <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+    <property name="hibernate.connection.url">jdbc:postgresql://localhost:5433/demo</property>
+    <property name="hibernate.connection.username">postgres</property>
+    <property name="hibernate.connection.password">root1</property>
+    <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+
+    <!-- Hibernate logging -->
+    <property name="hibernate.show_sql">true</property>
+    <property name="hibernate.format_sql">true</property>
+
+    <!-- Enable 2nd level cache -->
+    <property name="hibernate.cache.use_second_level_cache">true</property>
+    <property name="hibernate.cache.use_query_cache">true</property>
+    <property name="hibernate.cache.region.factory_class">org.hibernate.cache.ehcache.EhCacheRegionFactory</property>
+
+    <!-- Entity Mapping -->
+    <mapping class="caching.Bike"/>
+  </session-factory>
+</hibernate-configuration>
